@@ -1,0 +1,87 @@
+
+.skillTitle{
+   width: 100vw;
+   max-width: 70rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin-top: 4rem;
+   margin-bottom: 0.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 3.2rem;
+}
+h5{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+.skill_Container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+   margin: 6rem auto;
+   margin-bottom: 8rem;
+}
+.skill_Container > div{
+   background-color: rgb(41, 38, 38);
+   padding: 2.4rem 5rem;
+   border-radius: 2rem;
+   border: 1px solid transparent;
+
+}
+.skill_Container >div:hover {
+    background-color: transparent;
+    border-color: aliceblue;
+    cursor: default;
+
+}
+.skill_Container >div h3 {
+   text-align: center;
+   margin-bottom: 2rem;
+   color: cyan;
+}
+.skill_Content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 2rem;
+   
+}
+.skill_details{
+   display: flex;
+}
+.skill_details-icon {
+   margin-top: 6px;
+   margin-right:12px ;
+   color: cyan;
+}
+@media screen and (max-width: 860px) {
+   .skill_Container{
+      grid-template-columns: 1fr;
+
+   }
+   .skill_Container >div {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+
+   }
+   .skill_Content{
+      padding: 1rem;
+   }
+   
+}
+@media screen and (max-width: 550px) {
+   .skill_Container{
+      gap: 1rem;
+
+   }
+   .skill_Container >div{
+      width: 100%;
+      padding: 2rem 1rem;
+   }
+
+}

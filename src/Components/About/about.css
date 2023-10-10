@@ -1,0 +1,77 @@
+#about{
+    width: 100vw;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0  auto;
+}
+
+.aboutMe{
+font-size: 3rem;
+padding-top: 3rem;
+margin-bottom: 1.5rem;
+}
+.aboutPara{
+    font-weight: 200;
+    font-size: 1.1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+
+
+.eduBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+.eduBars>div:hover {
+    background-color: transparent;
+    border-color: aliceblue;
+    cursor: default;
+}
+.eduBar{
+display: flex;
+margin: 1rem;
+padding: 1.5rem 2rem ;
+border-radius: 0.5rem;
+background-color: rgb(50, 50, 50);
+}
+.eduBarImg{
+max-width: 4rem;
+max-height: 4rem;
+object-fit: cover;
+margin-right: 2rem;
+
+
+}
+.eduBarText>p{
+font-size: 1rem;
+font-weight: 200;
+
+}
+@media screen and (max-width:720px) {
+    .eduBarText{
+        font-size: 2vw;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .eduBarText{
+        font-size: 3vw;
+    }
+    .eduBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+
+    }
+    .eduBarText>h2{
+        font-size: 5vw;
+    }
+    
+}

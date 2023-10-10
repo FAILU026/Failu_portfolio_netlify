@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background: transparent;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif ;  
+  }
+  
+  body{
+    background-color:rgb(17, 16, 16);
+    color: aliceblue; 
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0  auto;
+    
+  
+  } 
+  
