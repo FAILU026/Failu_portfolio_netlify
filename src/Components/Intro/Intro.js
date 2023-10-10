@@ -1,34 +1,34 @@
 import React from 'react'
 import './intro.css';
 import bg from '../Intro/bg.png';
+import TextTransition, { presets } from 'react-text-transition';
 import { Link } from 'react-scroll';
-import Typical from 'react-typical';
 import {TiSocialLinkedinCircular} from 'react-icons/ti';
 import {HiOutlineMail} from 'react-icons/hi';
 import {DiGithubBadge} from 'react-icons/di';
 
+const TEXTS = ['Frontend Developer', 'React Developer', 'MernStack Developer', 'FullStack Developer'];
 const Intro = () => {
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      2000, // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
   return (
     <section id='intro'>
         <div className='introContent'>
             <span className="hello">Hello,</span>
             <span className="introText">I'm <span className="introName">Failur Rahuman</span><br />
             <div>
-              <Typical
-              loop={Infinity}
-              steps={[
-                "MernStack Developer",
-                1500,
-                "FullStack Developer",
-                1500,
-                "Frontend Developer",
-                1500,
-                "React Developer",
-                1500,
-
-              ]}
-              />
-              </div></span>
+               <span>
+      <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
+      </span>
+             </div></span>
            
            <div className='btn'>
             <Link  activeClass='active'to='contact' spy={true} smooth={true} offset={-50} duration={500} className="hList">
