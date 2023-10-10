@@ -111,9 +111,31 @@ position: relative;
     max-height: 35px;
     color: #0ef;
 }
-/* @media screen and (max-width: 500px){
-.introImg{
-   position: fixed;
-}} */
+@media screen and (max-width: 670px) {
+   .introName{
+        color: white;
+    }
+ 
+ .intro-text{
+    font-size: 2rem;
+ }
 
+.btn{
+  font-size: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+.introImg{
+    right: -10vw;
+}
+
+}  
+@media screen and (max-width: 280px) {
+    .introImg{
+        right: -20vw;
+    }
+    btn{
+        font-size: 0.3rem;
+        
+      }
     
+    }

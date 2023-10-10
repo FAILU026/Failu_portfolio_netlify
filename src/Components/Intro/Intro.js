@@ -22,14 +22,16 @@ const Intro = () => {
   return (
     <section id='intro'>
         <div className='introContent'>
+          
             <span className="hello">Hello,</span>
+            <div className='intro-text'>
             <span className="introText">I'm <span className="introName">Failur Rahuman</span><br />
             <div>
                <span>
       <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </span>
              </div></span>
-           
+             </div>
            <div className='btn'>
             <Link  activeClass='active'to='contact' spy={true} smooth={true} offset={-50} duration={500} className="hList">
             <button className='hireBtn'>Hire Me</button></Link>

@@ -59,3 +59,13 @@
     width: 2.4rem;
     margin: 0 0.75rem;
  }
+ @media screen and (max-width: 670px){
+    .contactPageTitle{
+        font-size: 1.2rem;
+    }
+    .contactDesc{
+        font-size: small;
+        font-weight: 200;
+
+    }
+ }
