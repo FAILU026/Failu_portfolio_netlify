@@ -19,7 +19,7 @@ const About = () => {
           <div className='eduBar'>
             <img src={fossfreaks} alt="fossFreak" className="eduBarImg" />
             <div className='eduBarText'>
-              <h2>Frontend Developer | Intern</h2>
+              <h2>MernStack Developer | Intern</h2>
               <p >FossFreaks. pvt. Ltd</p>
               <h4>Pursuing</h4>
             </div>
