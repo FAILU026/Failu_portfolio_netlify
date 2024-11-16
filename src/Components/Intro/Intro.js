@@ -35,8 +35,9 @@ const Intro = () => {
            <div className='btn'>
             <Link  activeClass='active'to='contact' spy={true} smooth={true} offset={-50} duration={500} className="hList">
             <button className='hireBtn'>Hire Me</button></Link>
-            <a href="resume.pdf"
-             download=' Failur resume.pdf'>
+            <a href="/Failu_resume.pdf" download="Failur resume.pdf">
+
+            
             <button className="cv">Downlod Cv</button>
             </a>
             </div>

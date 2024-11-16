@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css';
 import fossfreaks from '../About/fossfreaks.PNG';
 import clg from '../About/clg.png';
-import school from '../About/school.jpg';
+import cloud from '../About/cloud.png';
 
 
 const About = () => {
@@ -12,16 +12,27 @@ const About = () => {
        <div className='about'>
             <h1 className='aboutMe'>About Me</h1>
         <div className='aboutPara'>
-          <p>I recently graduated with a BE in Computer Science from Srm Valliammai Engineering College. During my academic journey, I gained a strong foundation in programming languages such as Java, C, and MySql. I also developed proficiency in web development technologies such as HTML, CSS, JavaScript and React Js.</p>
+          <p>Driven and self-motivated UI Developer, eager to utilize my knowledge and skills to contribute to organizational 
+growth while continuously learning and growing professionally. I am adaptable, quick to learn, and excel at 
+executing plans and strategies effectively, with a strong focus on achieving success and helping the company 
+reach new height.</p>
         </div>
         </div>
         <div className='eduBars'>
+        <div className='eduBar'>
+            <img src={cloud} alt="" className="eduBarImg1" />
+            <div className='eduBarText'>
+              <h2>Junior Software Developer</h2>
+              <p>Cloudnow Techmologies</p>
+              <h4>May-2024 - Present</h4>
+            </div>
+          </div>
           <div className='eduBar'>
             <img src={fossfreaks} alt="fossFreak" className="eduBarImg" />
             <div className='eduBarText'>
-              <h2>MernStack Developer | Intern</h2>
+              <h2>Fullstack Developer | Intern</h2>
               <p >FossFreaks. pvt. Ltd</p>
-              <h4>Pursuing</h4>
+              <h4>July 2023 - Nov 2023</h4>
             </div>
           </div>
           <div className='eduBar'>
@@ -32,14 +43,7 @@ const About = () => {
               <h4>2019-2023 | Completed</h4>
             </div>
           </div>
-          <div className='eduBar'>
-            <img src={school} alt="popular" className="eduBarImg" />
-            <div className='eduBarText'>
-              <h2>High School</h2>
-              <p>Popular Matric Hr Sec School</p>
-              <h4>2017-2019 | Completed</h4>
-            </div>
-          </div>
+          
           
 
         </div>
